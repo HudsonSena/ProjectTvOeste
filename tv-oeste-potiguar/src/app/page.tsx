@@ -5,10 +5,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  type CarouselApi,
 } from "@/components/ui/carousel";
 import { CardEvent } from "./_components/cardEvents";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const news = [
