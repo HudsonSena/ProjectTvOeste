@@ -12,9 +12,9 @@ export function Header() {
   return (
     <header
       id="header"
-      className="sm:p-0 lg:px-80 mx-auto flex flex-col items-center gap-2 justify-between shadow-sm border-b-2"
+      className="py-5 px-5 lg:px-48 mx-auto flex flex-col items-center gap-2 justify-between shadow-sm"
     >
-      <div className="w-full hidden pt-5 lg:flex">
+      <div className="w-full hidden lg:flex">
         <nav className="w-full flex flex-row justify-around text-primary">
           <a href="#news" className="hover:underline">
             Notíciais
