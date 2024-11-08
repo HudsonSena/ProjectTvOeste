@@ -16,10 +16,13 @@ export function Header() {
     >
       <div className="w-full hidden lg:flex">
         <nav className="w-full flex flex-row justify-around text-primary">
-          <a href="#news" className="hover:underline">
+          <a href="/" className="hover:underline">
+            Home
+          </a>
+          <a href="/news" className="hover:underline">
             Notíciais
           </a>
-          <a href="#events" className="hover:underline">
+          <a href="/events" className="hover:underline">
             Eventos
           </a>
           <a href="#" className="hover:underline">

@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./_components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,7 +26,9 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
