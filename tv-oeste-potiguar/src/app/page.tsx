@@ -20,8 +20,8 @@ export default function Home() {
                     <h1 id="news" className="font-semibold">
                         Notícias
                     </h1>
-                    <Link href={'/news'} className="text-primary">
-                        Mais notícias...
+                    <Link href={'/noticias'} className="text-primary font-semibold">
+                        mais notícias...
                     </Link>
                 </div>
 
@@ -43,8 +43,8 @@ export default function Home() {
                     <h1 id="events" className="font-semibold">
                         Eventos
                     </h1>
-                    <Link href={'/events'} className="text-primary">
-                        Mais eventos...
+                    <Link href={'/eventos'} className="text-primary font-semibold">
+                        mais eventos...
                     </Link>
                 </div>
                 <Carousel>

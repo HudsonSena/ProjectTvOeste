@@ -7,6 +7,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { LucideMenu } from "lucide-react";
 import { ModeToggle } from "./modeToggle";
+import Link from "next/link";
+import { DialogLogin } from "./dialogLogin";
 
 export function Header() {
   return (
@@ -15,22 +17,23 @@ export function Header() {
       className="py-5 px-5 lg:px-48 mx-auto flex flex-col items-center gap-2 justify-between shadow-sm"
     >
       <div className="w-full hidden lg:flex">
-        <nav className="w-full flex flex-row justify-around text-primary">
-          <a href="/" className="hover:underline">
+        <nav className="w-full flex flex-row justify-around text-primary font-semibold">
+          <Link href="/" className="hover:underline">
             Home
-          </a>
-          <a href="/news" className="hover:underline">
-            Notíciais
-          </a>
-          <a href="/events" className="hover:underline">
+          </Link>
+          <Link href="/noticias" className="hover:underline">
+            Notícias
+          </Link>
+          <Link href="/eventos" className="hover:underline">
             Eventos
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Serviços
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Contatos
-          </a>
+          </Link>
+          <DialogLogin />
         </nav>
         <ModeToggle />
       </div>
@@ -43,12 +46,32 @@ export function Header() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem>Notícias</DropdownMenuItem>
-              <DropdownMenuItem>Eventos</DropdownMenuItem>
-              <DropdownMenuItem>Serviços</DropdownMenuItem>
-              <DropdownMenuItem>Contatos</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/" className="hover:underline">
+                  Home
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/noticias" className="hover:underline">
+                  Notícias
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/eventos" className="hover:underline">
+                  Eventos
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem><Link href="/servicos" className="hover:underline">
+                Serviços
+              </Link></DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/contatos" className="hover:underline">
+                  Contatos
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <DialogLogin />
           <ModeToggle />
         </div>
         <div>
