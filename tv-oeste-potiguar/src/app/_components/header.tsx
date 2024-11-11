@@ -78,6 +78,7 @@ export function Header() {
           <h1 className="font-extrabold text-8xl">
             TV <span className="text-primary">O</span>ESTE RN
           </h1>
+
           <div className="flex justify-end items-center gap-3">
             <p className="font-semibold text-primary ">Desde 2018</p>
           </div>

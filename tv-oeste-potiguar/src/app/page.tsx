@@ -11,7 +11,13 @@ export default function Home() {
         "Noticia 4",
         "Noticia 5",
     ];
-    const events = ["Evento 1", "Evento 2", "Evento 3", "Evento 4", "Evento 5"];
+    const events = [
+        "Evento 1",
+        "Evento 2",
+        "Evento 3",
+        "Evento 4",
+        "Evento 5"
+    ];
 
     return (
         <main className="px-5 py-10 lg:px-48">

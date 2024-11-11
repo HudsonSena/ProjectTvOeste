@@ -1,6 +1,6 @@
 export function CardEvent({ name }) {
   return (
-    <div className="p-3 bg-gradient-to-r from-red-800 to-orange-600 rounded-xl">
+    <div className="p-3 bg-gradient-to-r from-emerald-800 to-emerald-500 rounded-xl">
       <h1 className="text-primary text-white text-xs">{name}</h1>
       <p className="text-gray-200">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus
